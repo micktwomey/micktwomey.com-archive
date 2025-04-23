@@ -24,6 +24,61 @@
 	
 	  <div class="h-entry">
 		
+
+		<a href="https://micktwomey.com/2025/04/21/the-gist-trans-rights-are/" class="u-url"><time class="dt-published" datetime="2025-04-21 12:37:10 &#43;0100">Apr 21, 2025</time></a>
+
+		<div class="e-content">
+			 <!-- raw HTML omitted -->
+<p>Great analysis of both the recent UK court ruling and a recent CJEU ruling on trans rights. The CJEU ruling is much more relevant to Ireland but got no press coverage.</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://micktwomey.com/2025/04/20/using-uv-for-django-projects/">Using uv for Django projects</a></h1>
+		
+
+		<a href="https://micktwomey.com/2025/04/20/using-uv-for-django-projects/" class="u-url"><time class="dt-published" datetime="2025-04-20 18:12:05 &#43;0100">Apr 20, 2025</time></a>
+
+		<div class="e-content">
+			 <p><a href="https://docs.astral.sh/uv/">uv</a> can be used to bootstrap Python for a Django project on a machine with nothing else except uv installed.</p>
+<p>Rough steps:</p>
+<ol>
+<li><a href="https://docs.astral.sh/uv/#installation">Install uv</a>. This is the trickiest bit but sets you up well for future projects.</li>
+<li>Create a Python project</li>
+<li>Add Django as a dependency to the project</li>
+<li>Run Django commands using uv (<code>uv run django-admin</code> or <code>uv run python manage.py</code>)</li>
+</ol>
+<p>An example using the Django tutorial&rsquo;s first steps:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Install uv</span>
+curl -LsSf https://astral.sh/uv/install.sh | sh
+<span style="color:#75715e"># If you need curl try `brew install curl or `apt-get install curl` or `yum install curl`</span>
+
+<span style="color:#75715e"># Create a python project</span>
+uv init djangotutorial
+
+<span style="color:#75715e"># Go into the project folder</span>
+cd djangotutorial
+
+<span style="color:#75715e"># Add Django</span>
+uv add django
+
+<span style="color:#75715e"># Initialize a Django site</span>
+uv run django-admin startproject mysite .
+
+<span style="color:#75715e"># Run the site</span>
+uv run python manage.py runserver
+
+<span style="color:#75715e"># Go to http://localhost:8000/</span>
+</code></pre></div><p>Where the tutorial says <code>python manage.py</code> you can pretty much always use <code>uv run python manage.py</code>.</p>
+<p>The other nice feature of this approach over the usual Django tutorial is you start out with a project Python project, ready to package and deploy.</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
 			<h1><a href="https://micktwomey.com/2025/04/17/pin-your-github-actions-just/">Pin your GitHub Actions</a></h1>
 		
 
