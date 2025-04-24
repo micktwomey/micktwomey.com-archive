@@ -1,3 +1,3 @@
 # micktwomey.com-archive
 
-Archive of my posts to micktwomey.com (a micro.blog)
+Archive of my posts to https://micktwomey.com/ (a micro.blog)
