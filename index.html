@@ -24,6 +24,60 @@
 	
 	  <div class="h-entry">
 		
+			<h1><a href="https://micktwomey.com/2025/06/05/glyph-i-think-im-done/">Glyph: I Think I’m Done Thinking About genAI For Now</a></h1>
+		
+
+		<a href="https://micktwomey.com/2025/06/05/glyph-i-think-im-done/" class="u-url"><time class="dt-published" datetime="2025-06-05 15:41:19 &#43;0100">Jun 5, 2025</time></a>
+
+		<div class="e-content">
+			 <p>This post captures a lot of my thoughts, saves me having to state my position :D</p>
+<!-- raw HTML omitted -->
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://micktwomey.com/2025/04/24/you-wouldnt-steal-a-car/">&#34;You wouldn&#39;t steal a car&#34; campaign pirated content</a></h1>
+		
+
+		<a href="https://micktwomey.com/2025/04/24/you-wouldnt-steal-a-car/" class="u-url"><time class="dt-published" datetime="2025-04-24 11:36:10 &#43;0100">Apr 24, 2025</time></a>
+
+		<div class="e-content">
+			 <p>I can&rsquo;t stop laughing at this. It&rsquo;s so fitting for that ad campaign:</p>
+<!-- raw HTML omitted -->
+<p>In a reply someone pointed out that they also stole the music.</p>
+<p>(seen via <a href="https://jmason.ie/2025/04/24/084003a.html">Justin&rsquo;s blog</a>)</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://micktwomey.com/2025/04/23/osh-is-a-great-drop/">osh is a great drop in bash replacement</a></h1>
+		
+
+		<a href="https://micktwomey.com/2025/04/23/osh-is-a-great-drop/" class="u-url"><time class="dt-published" datetime="2025-04-23 15:23:21 &#43;0100">Apr 23, 2025</time></a>
+
+		<div class="e-content">
+			 <!-- raw HTML omitted -->
+<p>I&rsquo;ve starting using <a href="https://oils.pub/osh.html">osh</a> for testing my bash scripts (mostly used in build and deployments). It&rsquo;s been great for both giving better error messages and spotting problems <a href="https://www.shellcheck.net/">shellcheck</a> mightn&rsquo;t catch.</p>
+<p>This has been my favourite so far:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">osh -o strict:all ./myscript.sh
+    <span style="color:#66d9ef">if</span> assert_task_definition_is_older <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>task_definition<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;deployed&#34;</span>; <span style="color:#66d9ef">then</span>
+    ^~
+myscript.sh:119: errexit was disabled <span style="color:#66d9ef">for</span> this construct
+
+    <span style="color:#66d9ef">if</span> assert_task_definition_is_older <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>task_definition<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;deployed&#34;</span>; <span style="color:#66d9ef">then</span>
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+myscript.sh:119: fatal: Can<span style="color:#e6db74">&#39;t run a proc while errexit is disabled. Use &#39;</span>try<span style="color:#960050;background-color:#1e0010">&#39;</span> or wrap it in a process with $0 myproc
+</code></pre></div><p>This leads to this <a href="https://www.oilshell.org/preview/doc/error-handling.html#design-mistake-the-disabled-errexit-quirk">interesting note</a> on how <code>errexit</code> and <code>if</code> statements invoking shell functions lead to surprising behaviour (basically errexit is disabled).</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
 
 		<a href="https://micktwomey.com/2025/04/21/the-gist-trans-rights-are/" class="u-url"><time class="dt-published" datetime="2025-04-21 12:37:10 &#43;0100">Apr 21, 2025</time></a>
 
